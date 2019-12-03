@@ -10,6 +10,7 @@ public class Door {
 	private String name;
 	private int height;
 	private int width;
+	private int price;
 
 	public int getId() {
 		return id;
@@ -43,9 +44,17 @@ public class Door {
 		this.width = width;
 	}
 
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
 	@Override
 	public String toString() {
-		return "Door [id=" + id + ", name=" + name + ", height=" + height + ", width=" + width + "]";
+		return "Door:\tID: " + id + ", name=" + name + ", height=" + height + ", width=" + width + ", price=" + price;
 	}
 
 }
